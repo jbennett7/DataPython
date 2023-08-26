@@ -5,12 +5,12 @@
 * Array
 * Binary Search
 * OrderedArray
-
-### TODO
 * Logarithms
 * OrderedRecordArray
 * Big O Notation
 * Summary
 * Questions
 * Experiments
+
+### TODO
 * Programming Projects

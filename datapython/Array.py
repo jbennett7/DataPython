@@ -40,3 +40,19 @@ class Array(object):
     def traverse(self, function=print):
         for j in range(self.__nItems):
             function(self.__a[j])
+
+    # page 73, PP 2.1
+    def getMaxNum(self):
+        maxNum = None
+        for _ in self.__a:
+            if isinstance(_, (int, float)):
+                if maxNum == None or _ > maxNum:
+                    maxNum = _
+        return maxNum
+
+    # PP 2.2
+    def deleteMaxNum(self):
+        maxNum = self.getMaxNum()
+        self.delete(maxNum)
+        return maxNum 
+
