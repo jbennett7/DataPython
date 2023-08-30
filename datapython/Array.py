@@ -56,3 +56,18 @@ class Array(object):
         self.delete(maxNum)
         return maxNum 
 
+    # PP 2.3
+    def removeDupes(self):
+        _ = [None] * self.__nItems
+        _nItems = 0
+        for j in range(self.__nItems):
+            found = False
+            for k in range(_nItems):
+                if self.__a[j] == _[k]:
+                    found = True
+                    break
+            if not found:
+                _[_nItems] = self.__a[j]
+                _nItems+=1
+        self.__a = _
+        self.__nItems = _nItems
